@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="heading">My Gallery</h1>
+
+        <div class="card">
+
+            <h2>Gallery</h2>
+
+            <p class="gallery-text">
+                Welcome to my gallery. This page showcases my hobbies,
+                achievements, and learning experiences. These images
+                reflect my journey as a student and aspiring Software Developer.
+            </p>
+
+            <div class="slideshow-container">
+
+                <img class="slide active" src="images/nails.jpg" alt="Gel Nails">
+                <img class="slide" src="images/crochet.jpg" alt="Crocheting">
+                <img class="slide" src="images/webdevelopment.jpg" alt="Learning Web Development">
+                <img class="slide" src="images/lexlumen.jpg" alt="Lex Lumen Law Certificate">
+                <img class="slide" src="images/microsoft.jpg" alt="Microsoft Certifications">
+                <img class="slide" src="images/github.jpg" alt="GitHub">
+
+            </div>
+
+            <div class="caption">
+                <h3 id="caption"></h3>
+            </div>
+
+            <div class="dots-container">
+
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+
+             </div>
+
+        </div>
+
+        <div class="button-container">
+            <a href="profile.html" class="button">Back to Profile</a>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
