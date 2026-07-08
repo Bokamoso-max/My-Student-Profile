@@ -1,0 +1,129 @@
+/* ===== GENERAL STYLING ===== */
+
+body{
+    background-color:#f1f1f1;
+    font-family:"Courier New", Courier, monospace;
+    margin:20px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* ===== HEADINGS ===== */
+
+.heading{
+    text-align:center;
+    color:purple;
+}
+
+h1{
+    color:purple;
+    text-align:center;
+}
+
+h2{
+    color:purple;
+}
+
+h3{
+    color:red;
+}
+
+h4{
+    color:purple;
+}
+
+/* ===== PARAGRAPHS ===== */
+
+.card p{
+    text-align:justify;
+    line-height:1.6;
+}
+
+/* ===== COVER PAGE ===== */
+
+.cover-body{
+    text-align:center;
+    border:3px solid #ccc;
+    padding:20px;
+}
+
+.cover-image{
+    width:250px;
+    height:auto;
+    border-radius:10px;
+    border:2px solid #999;
+    margin:20px 0;
+    transition:0.4s ease;
+}
+
+/* Purple glow on hover */
+.cover-image:hover{
+    border:2px solid purple;
+    box-shadow:0 0 20px purple;
+    transform:scale(1.05);
+}
+
+.details{
+    margin-top:20px;
+    font-size:18px;
+    text-align:center;
+}
+
+.cover-text{
+    text-align:center;
+    max-width:700px;
+    margin:20px auto;
+    line-height:1.6;
+}
+/* ===== PROFILE CARDS ===== */
+
+.card{
+    background:#ffffff;
+    border:2px solid #cccccc;
+    border-radius:10px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== LISTS ===== */
+
+ul,
+ol{
+    line-height:1.8;
+}
+
+/* ===== BUTTONS ===== */
+
+.button-container{
+    text-align:center;
+    margin-top:30px;
+}
+
+.button{
+    display:inline-block;
+    margin:10px;
+    padding:12px 25px;
+    background:purple;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:white;
+    color:purple;
+    border:2px solid purple;
+}
+
+/* ===== HORIZONTAL LINE ===== */
+
+hr{
+    border:1px solid #ddd;
+}
