@@ -26,6 +26,7 @@ h1{
 
 h2{
     color:purple;
+    text-align:center;
 }
 
 h3{
@@ -186,7 +187,6 @@ ol{
     color:purple;
 }
 
-
 /* ===== HORIZONTAL LINE ===== */
 
 hr{
@@ -279,10 +279,7 @@ hr{
     box-shadow:0 0 15px rgba(0,0,0,.2);
 }
 
-h2{
-    text-align:center;
-    color:#206AB4;
-}
+
 
 input{
     width:100%;
