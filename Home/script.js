@@ -7,7 +7,6 @@ const captions = [
     "💻 Learning Web Development through W3Schools and YouTube",
     "⚖️ Lex Lumen Law Certificate",
     "🏆 Microsoft Certifications",
-    "💼 My GitHub Projects"
 ];
 
 let slideIndex = 0;
@@ -48,4 +47,4 @@ setInterval(function(){
 
     showSlide(slideIndex);
 
-},5000);
+},3000);
