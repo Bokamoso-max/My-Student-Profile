@@ -97,6 +97,62 @@ ol{
     line-height:1.8;
 }
 
+/* ===== LOGIN PAGE ===== */
+
+.login-page{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.login-box{
+    width:380px;
+    background:white;
+    border:2px solid #ccc;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    transition:0.4s;
+}
+
+/* Purple glow when hovering over the form */
+.login-box:hover{
+    border-color:purple;
+    box-shadow:0 0 25px purple;
+}
+
+.login-text{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.login-box input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:2px solid #ccc;
+    border-radius:8px;
+    font-family:"Courier New", Courier, monospace;
+    font-size:16px;
+    box-sizing:border-box;
+    transition:0.3s;
+}
+
+/* Input glow when selected */
+.login-box input:focus{
+    outline:none;
+    border-color:purple;
+    box-shadow:0 0 12px purple;
+}
+
+.login-box .button{
+    width:100%;
+    margin-top:15px;
+    text-align:center;
+    box-sizing:border-box;
+}
+
 /* ===== BUTTONS ===== */
 
 .button-container{
@@ -121,6 +177,15 @@ ol{
     color:purple;
     border:2px solid purple;
 }
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    text-decoration:none;
+    color:purple;
+}
+
 
 /* ===== HORIZONTAL LINE ===== */
 
@@ -204,4 +269,49 @@ hr{
 
 .dot.active{
     background-color:purple;
+}
+
+.login-box{
+    width:350px;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 15px rgba(0,0,0,.2);
+}
+
+h2{
+    text-align:center;
+    color:#206AB4;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#206AB4;
+    color:white;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#184f88;
+}
+
+.back{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    text-decoration:none;
+    color:#206AB4;
 }
