@@ -7,6 +7,7 @@ body{
 }
 
 .container{
+    width:90%;
     max-width:1000px;
     margin:auto;
     padding:20px;
@@ -48,12 +49,12 @@ h4{
 
 .cover-body{
     text-align:center;
-    border:3px solid #ccc;
     padding:20px;
 }
 
 .cover-image{
-    width:250px;
+    width:100%;
+    max-width:250px;
     height:auto;
     border-radius:10px;
     border:2px solid #999;
@@ -74,21 +75,47 @@ h4{
     text-align:center;
 }
 
+.details p{
+    text-align:center;
+    margin:8px 0;
+}
+
 .cover-text{
     text-align:center;
     max-width:700px;
     margin:20px auto;
     line-height:1.6;
 }
+
+/* ===== COVER PAGE BUTTONS ===== */
+
+.cover-body .button-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.cover-body .button{
+    min-width:180px;
+}
+
+
 /* ===== PROFILE CARDS ===== */
 
 .card{
-    background:#ffffff;
-    border:2px solid #cccccc;
-    border-radius:10px;
-    padding:20px;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:15px;
+    padding:30px;
     margin-bottom:20px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    box-shadow:0 0 20px rgba(128,0,128,.3);
 }
 
 /* ===== LISTS ===== */
@@ -157,18 +184,24 @@ ol{
 /* ===== BUTTONS ===== */
 
 .button-container{
-    text-align:center;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
     margin-top:30px;
 }
 
 .button{
-    display:inline-block;
-    margin:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-width:180px;
     padding:12px 25px;
     background:purple;
     color:white;
     text-decoration:none;
     border-radius:8px;
+    border:2px solid transparent;
     font-weight:bold;
     transition:0.3s;
 }
@@ -179,14 +212,13 @@ ol{
     border:2px solid purple;
 }
 
-.back{
-    display:block;
-    text-align:center;
-    margin-top:15px;
-    text-decoration:none;
-    color:purple;
+button.button{
+    width:100%;
+    cursor:pointer;
+    border:none;
+    font-family:"Courier New", Courier, monospace;
+    font-size:16px;
 }
-
 /* ===== HORIZONTAL LINE ===== */
 
 hr{
@@ -218,10 +250,12 @@ hr{
 .slide{
     display:none;
     width:100%;
+    max-width:700px;
     height:450px;
     object-fit:cover;
     border-radius:10px;
     border:3px solid #999;
+    margin:auto;
 }
 
 .slide.active{
@@ -271,44 +305,221 @@ hr{
     background-color:purple;
 }
 
+/* ==========================================
+   LARGE LAPTOPS & DESKTOPS (1200px and below)
+========================================== */
+
+@media screen and (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.slideshow-container{
+    max-width:800px;
+}
+
+}
+
+
+/* ==========================================
+   SMALL LAPTOPS (992px and below)
+========================================== */
+
+@media screen and (max-width:992px){
+
+.container{
+    width:95%;
+}
+
+.cover-image{
+    max-width:220px;
+}
+
+.slide{
+    height:380px;
+}
+
 .login-box{
-    width:350px;
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 15px rgba(0,0,0,.2);
+    width:70%;
+}
+
+.button-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.button{
+    min-width:180px;
+}
+
 }
 
 
+/* ==========================================
+   TABLETS (768px and below)
+========================================== */
 
-input{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid #ccc;
-    border-radius:5px;
-    box-sizing:border-box;
+@media screen and (max-width:768px){
+
+body{
+    margin:10px;
 }
 
-button{
+.container{
     width:100%;
-    padding:12px;
-    border:none;
-    background:#206AB4;
-    color:white;
+    padding:15px;
+}
+
+.card{
+    padding:18px;
+}
+
+.cover-image{
+    max-width:180px;
+}
+
+.details{
+    font-size:17px;
+}
+
+.slide{
+    height:300px;
+}
+
+.login-box{
+    width:90%;
+}
+
+.button-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.button{
+    width:45%;
+    min-width:150px;
+}
+
+h1{
+    font-size:2rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+
+}
+
+
+/* ==========================================
+   MOBILE PHONES (576px and below)
+========================================== */
+
+@media screen and (max-width:576px){
+
+body{
+    margin:5px;
+}
+
+.container{
+    padding:10px;
+}
+
+.card{
+    padding:15px;
+}
+
+.cover-image{
+    max-width:150px;
+}
+
+.details{
     font-size:16px;
-    border-radius:5px;
-    cursor:pointer;
 }
 
-button:hover{
-    background:#184f88;
+.cover-text{
+    font-size:15px;
 }
 
-.back{
-    display:block;
-    text-align:center;
-    margin-top:15px;
-    text-decoration:none;
-    color:#206AB4;
+.slide{
+    height:230px;
+}
+
+.button-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.button{
+    width:100%;
+    max-width:300px;
+}
+
+.login-box{
+    width:95%;
+    padding:20px;
+}
+
+.login-box input{
+    font-size:15px;
+}
+
+h1{
+    font-size:1.7rem;
+}
+
+h2{
+    font-size:1.4rem;
+}
+
+h3{
+    font-size:1.2rem;
+}
+
+p,
+li{
+    font-size:15px;
+}
+
+}
+
+
+/* ==========================================
+   VERY SMALL PHONES (360px and below)
+========================================== */
+
+@media screen and (max-width:360px){
+
+.cover-image{
+    max-width:120px;
+}
+
+.slide{
+    height:180px;
+}
+
+.button{
+    font-size:14px;
+    padding:10px;
+}
+
+h1{
+    font-size:1.5rem;
+}
+
+h2{
+    font-size:1.2rem;
+}
+
+p,
+li{
+    font-size:14px;
+}
+
 }

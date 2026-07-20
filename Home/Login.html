@@ -15,13 +15,37 @@
             Welcome back! Please enter your username and password to access your Student Profile.
         </p>
 
-        <form action="dashboard.html">
+        <form action="Profile.html">
 
-            <input type="text" placeholder="Username" required>
+        <label for="email"><strong>Gmail Address</strong></label>
 
-            <input type="password" placeholder="Password" required>
+        <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@gmail.com"
+        pattern="[a-zA-Z0-9._%+-]+@gmail\.com"
+        title="Please enter a valid Gmail address."
+        required>
+        
+        <label for="password"><strong>Password</strong></label>
 
-            <a href="Profile.html" class="button">Log in</a>
+        <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Enter your password"
+        minlength="8"
+        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}"
+        title="Password must contain at least 8 characters, one uppercase letter, one lowercase letter, one number and one special character."
+        required>
+
+        
+       <div class="button-container">  
+        
+        <button type="submit" class="button">Log In</button> 
+    
+       </div>
 
         </form>
 

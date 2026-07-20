@@ -2,11 +2,10 @@ const slides = document.querySelectorAll(".slide");
 const dots = document.querySelectorAll(".dot");
 
 const captions = [
-    "💅 Gel Nail Art - My Creative Hobby",
-    "🧶 Crocheting - My Side Hustle",
-    "💻 Learning Web Development through W3Schools and YouTube",
-    "⚖️ Lex Lumen Law Certificate",
-    "🏆 Microsoft Certifications",
+    " Attending Church Events - My Life",
+    " Crocheting - My Creative Hobby",
+    " Learning Web Development through W3Schools",
+    " Record of Law Certificate",
 ];
 
 let slideIndex = 0;
